@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	html
+		head
+			title Crawled links
+			div(class='page-header')
+				h1 Crawled Links
+				nav
+				ul(class='pager')
+					li(class='previous')
+						a(href='/homepage') Back to home
+		body
+			textarea(id = "td1" style="resize:none; background:#004747; color: white; font-size:90%" name="msgbox" rows="16" cols="207" readonly) #{contents}
